@@ -1,36 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/N6MuUF
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
--- departments_db
--- -
--- dept_no pk varchar FK >- dept_manager_db.dept_no
--- dept_name varchar
--- dept_emp_db
--- -
--- emp_no pk int FK - employees_db.emp_no
--- dept_no varchar FK - departments_db.dept_no
--- dept_manager_db
--- -
--- dept_no varchar
--- emp_no pk int FK -< employees_db.emp_no
--- employees_db
--- -
--- emp_no pk int FK - salaries_db.emp_no
--- emp_title_id fk varchar
--- birth_date varchar
--- first_name varchar
--- last_name varchar
--- sex varchar
--- hire_date varchar
--- salaries_db
--- -
--- emp_no pk int
--- salary int
--- titles_db
--- -
--- title_id pk varchar FK -< employees_db.emp_title_id
--- title varchar
+﻿
 
 CREATE TABLE "contacts_db" (
     "contact_id" int   NOT NULL,
